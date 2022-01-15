@@ -1,0 +1,2 @@
+beginner_tutorials:listener_package:my_roscpp_library:second_package
+-DCATKIN_DEVEL_PREFIX=/home/maxwell/Desktop/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maxwell/Desktop/catkin_ws/install -G Unix Makefiles
