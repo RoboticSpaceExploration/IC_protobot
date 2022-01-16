@@ -1,8 +1,8 @@
-# Install script for directory: /home/maxwell/Desktop/catkin_ws/src/second_package
+# Install script for directory: /home/maxwell/Desktop/IC_protobot/catkin_ws/src/second_package
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maxwell/Desktop/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/maxwell/Desktop/IC_protobot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,37 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package/cmake" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/build/second_package/catkin_generated/installspace/second_package-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package/cmake" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/catkin_generated/installspace/second_package-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/maxwell/Desktop/catkin_ws/devel/share/roseus/ros/second_package")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/second_package")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/maxwell/Desktop/catkin_ws/devel/lib/python3/dist-packages/second_package")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/python3/dist-packages/second_package")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/maxwell/Desktop/catkin_ws/devel/lib/python3/dist-packages/second_package")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/python3/dist-packages/second_package")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/build/second_package/catkin_generated/installspace/second_package.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/catkin_generated/installspace/second_package.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package/cmake" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/build/second_package/catkin_generated/installspace/second_package-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package/cmake" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/catkin_generated/installspace/second_package-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package/cmake" TYPE FILE FILES
-    "/home/maxwell/Desktop/catkin_ws/build/second_package/catkin_generated/installspace/second_packageConfig.cmake"
-    "/home/maxwell/Desktop/catkin_ws/build/second_package/catkin_generated/installspace/second_packageConfig-version.cmake"
+    "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/catkin_generated/installspace/second_packageConfig.cmake"
+    "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/catkin_generated/installspace/second_packageConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/src/second_package/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/second_package" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/src/second_package/package.xml")
 endif()
 

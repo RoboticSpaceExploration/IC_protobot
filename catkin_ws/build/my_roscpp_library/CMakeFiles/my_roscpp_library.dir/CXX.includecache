@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/maxwell/Desktop/catkin_ws/src/my_roscpp_library/include/my_roscpp_library/my_super_roscpp_library.h
+/home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library/include/my_roscpp_library/my_super_roscpp_library.h
 ros/ros.h
 -
 
-/home/maxwell/Desktop/catkin_ws/src/my_roscpp_library/src/my_super_roscpp_library.cpp
+/home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library/src/my_super_roscpp_library.cpp
 my_roscpp_library/my_super_roscpp_library.h
-/home/maxwell/Desktop/catkin_ws/src/my_roscpp_library/src/my_roscpp_library/my_super_roscpp_library.h
+/home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library/src/my_roscpp_library/my_super_roscpp_library.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

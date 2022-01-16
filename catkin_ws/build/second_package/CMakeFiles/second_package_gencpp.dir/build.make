@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maxwell/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/maxwell/Desktop/IC_protobot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maxwell/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = /home/maxwell/Desktop/IC_protobot/catkin_ws/build
 
 # Utility rule file for second_package_gencpp.
 
@@ -63,10 +63,10 @@ second_package/CMakeFiles/second_package_gencpp.dir/build: second_package_gencpp
 .PHONY : second_package/CMakeFiles/second_package_gencpp.dir/build
 
 second_package/CMakeFiles/second_package_gencpp.dir/clean:
-	cd /home/maxwell/Desktop/catkin_ws/build/second_package && $(CMAKE_COMMAND) -P CMakeFiles/second_package_gencpp.dir/cmake_clean.cmake
+	cd /home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package && $(CMAKE_COMMAND) -P CMakeFiles/second_package_gencpp.dir/cmake_clean.cmake
 .PHONY : second_package/CMakeFiles/second_package_gencpp.dir/clean
 
 second_package/CMakeFiles/second_package_gencpp.dir/depend:
-	cd /home/maxwell/Desktop/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maxwell/Desktop/catkin_ws/src /home/maxwell/Desktop/catkin_ws/src/second_package /home/maxwell/Desktop/catkin_ws/build /home/maxwell/Desktop/catkin_ws/build/second_package /home/maxwell/Desktop/catkin_ws/build/second_package/CMakeFiles/second_package_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maxwell/Desktop/IC_protobot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maxwell/Desktop/IC_protobot/catkin_ws/src /home/maxwell/Desktop/IC_protobot/catkin_ws/src/second_package /home/maxwell/Desktop/IC_protobot/catkin_ws/build /home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package /home/maxwell/Desktop/IC_protobot/catkin_ws/build/second_package/CMakeFiles/second_package_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : second_package/CMakeFiles/second_package_gencpp.dir/depend
 

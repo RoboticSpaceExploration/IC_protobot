@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/lib/beginner_tutorials/talker"
-  "/home/maxwell/Desktop/catkin_ws/devel/lib/beginner_tutorials/talker.pdb"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/beginner_tutorials/talker"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/beginner_tutorials/talker.pdb"
   "CMakeFiles/talker.dir/src/talker.cpp.o"
 )
 

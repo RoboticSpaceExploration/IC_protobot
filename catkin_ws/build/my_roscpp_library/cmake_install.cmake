@@ -1,8 +1,8 @@
-# Install script for directory: /home/maxwell/Desktop/catkin_ws/src/my_roscpp_library
+# Install script for directory: /home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maxwell/Desktop/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/maxwell/Desktop/IC_protobot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_library.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_library.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_roscpp_library/cmake" TYPE FILE FILES
-    "/home/maxwell/Desktop/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_libraryConfig.cmake"
-    "/home/maxwell/Desktop/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_libraryConfig-version.cmake"
+    "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_libraryConfig.cmake"
+    "/home/maxwell/Desktop/IC_protobot/catkin_ws/build/my_roscpp_library/catkin_generated/installspace/my_roscpp_libraryConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_roscpp_library" TYPE FILE FILES "/home/maxwell/Desktop/catkin_ws/src/my_roscpp_library/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_roscpp_library" TYPE FILE FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmy_roscpp_library.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/maxwell/Desktop/catkin_ws/devel/lib/libmy_roscpp_library.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/libmy_roscpp_library.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmy_roscpp_library.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmy_roscpp_library.so")
     file(RPATH_CHANGE
@@ -76,6 +76,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/my_roscpp_library" TYPE DIRECTORY FILES "/home/maxwell/Desktop/catkin_ws/src/my_roscpp_library/include/my_roscpp_library/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/my_roscpp_library" TYPE DIRECTORY FILES "/home/maxwell/Desktop/IC_protobot/catkin_ws/src/my_roscpp_library/include/my_roscpp_library/")
 endif()
 

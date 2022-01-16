@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
-  "/home/maxwell/Desktop/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp"
   "CMakeFiles/beginner_tutorials_generate_messages_lisp"
 )
 

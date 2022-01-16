@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
-  "/home/maxwell/Desktop/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js"
   "CMakeFiles/beginner_tutorials_generate_messages_nodejs"
 )
 

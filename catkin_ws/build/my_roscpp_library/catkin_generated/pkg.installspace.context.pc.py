@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmy_roscpp_library".split(';') if "-lmy_roscpp_library" != "" else []
 PROJECT_NAME = "my_roscpp_library"
-PROJECT_SPACE_DIR = "/home/maxwell/Desktop/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/maxwell/Desktop/IC_protobot/catkin_ws/install"
 PROJECT_VERSION = "0.0.0"

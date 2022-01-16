@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/share/roseus/ros/second_package/manifest.l"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/second_package/manifest.l"
   "CMakeFiles/second_package_generate_messages_eus"
 )
 

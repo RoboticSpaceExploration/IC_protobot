@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/lib/second_package/num_gen"
-  "/home/maxwell/Desktop/catkin_ws/devel/lib/second_package/num_gen.pdb"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/second_package/num_gen"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/lib/second_package/num_gen.pdb"
   "CMakeFiles/num_gen.dir/src/num_gen.cpp.o"
 )
 

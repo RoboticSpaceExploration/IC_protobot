@@ -1,4 +1,4 @@
-prefix=/home/maxwell/Desktop/catkin_ws/install
+prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials

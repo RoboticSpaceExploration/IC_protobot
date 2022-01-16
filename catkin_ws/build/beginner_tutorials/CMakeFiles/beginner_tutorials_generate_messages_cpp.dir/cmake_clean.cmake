@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maxwell/Desktop/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h"
-  "/home/maxwell/Desktop/catkin_ws/devel/include/beginner_tutorials/Num.h"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h"
+  "/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/include/beginner_tutorials/Num.h"
   "CMakeFiles/beginner_tutorials_generate_messages_cpp"
 )
 
