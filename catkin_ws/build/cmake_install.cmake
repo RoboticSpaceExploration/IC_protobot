@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/maxwell/Desktop/IC_protobot/catkin_ws/build/listener_package/cmake_install.cmake")
   include("/home/maxwell/Desktop/IC_protobot/catkin_ws/build/my_roscpp_library/cmake_install.cmake")
   include("/home/maxwell/Desktop/IC_protobot/catkin_ws/build/async_web_server_cpp/cmake_install.cmake")
+  include("/home/maxwell/Desktop/IC_protobot/catkin_ws/build/video_stream_opencv/cmake_install.cmake")
   include("/home/maxwell/Desktop/IC_protobot/catkin_ws/build/web_video_server/cmake_install.cmake")
 
 endif()
