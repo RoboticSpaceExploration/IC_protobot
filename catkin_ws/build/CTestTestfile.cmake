@@ -5,7 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("beginner_tutorials")
 subdirs("listener_package")
 subdirs("my_roscpp_library")
-subdirs("second_package")
+subdirs("async_web_server_cpp")
+subdirs("web_video_server")

@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/home/maxwell/Desktop/IC_protobot/catkin_ws/build'
-export ROS_PACKAGE_PATH='/home/maxwell/Desktop/catkin_ws/src:/home/maxwell/Desktop/IC_protobot/catkin_ws/src:/opt/ros/noetic/share'

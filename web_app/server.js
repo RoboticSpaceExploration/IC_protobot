@@ -8,8 +8,6 @@ const ROSLIB = require("roslib")
 app.use(express.json())
 app.use(express.urlencoded())
 
-
-
 // roslib
 var ros = new ROSLIB.Ros({
     url: 'ws://0.0.0.0:9090'

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "gamepad.js": "^1.0.4",
     "roslib": "^1.1.0"
   },
   "devDependencies": {
