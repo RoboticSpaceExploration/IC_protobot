@@ -3,6 +3,7 @@ const express = require("express")
 const app = express()
 const path = require("path")
 const ROSLIB = require("roslib")
+// const GamepadListener = require('gamepad.js');
 
 //server config
 app.use(express.json())
@@ -23,7 +24,6 @@ var scoreTopic = new ROSLIB.Topic({
     messageType: 'std_msgs/Int64'
 })
 
-
 // paths
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"))
@@ -38,4 +38,8 @@ app.post('/', (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"))
 })
 
-app.listen(8000, ()=> {console.log('now listening on port 8000')})
+app.listen(8000, () => {console.log('now listening on port 8000')})
+
+
+//Test Gamepad
+

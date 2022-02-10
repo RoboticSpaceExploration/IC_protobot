@@ -1,5 +1,85 @@
 <h1>GUI Prototype</h1>
-<form method="POST">
-    <input name="num_data" type=number />
+<form method="POST" >
+    <input name="num_data" type=number id="form"/>
     <button type="submit">Send to ROS</button>
 </form>
+
+<body>
+<p id="gamepad-info">Waiting for Gamepad.</p>
+<div id="ball"></div>
+</body>
+
+<!-- Gamepad Test Suite -->
+<script>
+let gamepadInfo = document.getElementById("gamepad-info");
+let form = document.getElementById("form");
+let start;
+
+window.addEventListener("gamepadconnected", function(e) {
+  let gp = navigator.getGamepads()[e.gamepad.index];
+  gamepadInfo.innerHTML = "Gamepad connected at index " + gp.index + ": " + gp.id + ". It has " + gp.buttons.length + " buttons and " + gp.axes.length + " axes.";
+
+  gameLoop();
+});
+
+window.addEventListener("gamepaddisconnected", function(e) {
+  gamepadInfo.innerHTML = "Waiting for gamepad.";
+
+  cancelRequestAnimationFrame(start);
+});
+
+let interval;
+
+if (!('ongamepadconnected' in window)) {
+  // No gamepad events available, poll instead.
+  interval = setInterval(pollGamepads, 500);
+}
+
+function pollGamepads() {
+  const gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads : []);
+  for (let i = 0; i < gamepads.length; i++) {
+    let gp = gamepads[i];
+    if (gp) {
+      gamepadInfo.innerHTML = "Gamepad connected at index " + gp.index + ": " + gp.id +
+        ". It has " + gp.buttons.length + " buttons and " + gp.axes.length + " axes.";
+      gameLoop();
+      clearInterval(interval);
+    }
+  }
+}
+
+function buttonPressed(b) {
+  if (typeof(b) == "object") {
+    return b.pressed;
+  }
+  return b == 1.0;
+}
+
+function gameLoop() {
+  let gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads : []);
+  if (!gamepads) {
+    return;
+  }
+
+  let gp = gamepads[0];
+  if (buttonPressed(gp.buttons[12])) {
+    console.log('Dpad -> Up');
+    form.value = 1;
+    document.forms[0].submit();
+  } else if (buttonPressed(gp.buttons[13])) {
+    console.log('Dpad -> Down');
+    form.value = 2;
+    document.forms[0].submit();
+  }
+  if (buttonPressed(gp.buttons[14])) {
+    console.log('Dpad -> Left');
+    form.value = 3;
+    document.forms[0].submit();
+  } else if (buttonPressed(gp.buttons[15])) {
+    console.log('Dpad -> Right');
+    form.value = 4;
+    document.forms[0].submit();
+  }
+  start = requestAnimationFrame(gameLoop);
+}
+</script>
