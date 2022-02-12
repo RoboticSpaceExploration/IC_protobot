@@ -59,9 +59,9 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs: /home/maxwell/Deskto
 
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /home/maxwell/Desktop/IC_protobot/catkin_ws/src/navigation/navfn/srv/MakeNavPlan.srv
-/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from navfn/MakeNavPlan.srv"

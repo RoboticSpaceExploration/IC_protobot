@@ -24,5 +24,4 @@ odometry_listener.subscribe((m) => {
     document.getElementById("twistAngularY").innerHTML = "Angular Y: " + m.twist.twist.angular.y;
     document.getElementById("twistAngularZ").innerHTML = "Angular Z: " + m.twist.twist.angular.z;
 
-
 })

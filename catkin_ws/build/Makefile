@@ -519,6 +519,19 @@ my_roscpp_library/fast:
 .PHONY : my_roscpp_library/fast
 
 #=============================================================================
+# Target rules for targets named gps_test_node
+
+# Build rule for target.
+gps_test_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gps_test_node
+.PHONY : gps_test_node
+
+# fast build rule for target.
+gps_test_node/fast:
+	$(MAKE) -f nav_test/CMakeFiles/gps_test_node.dir/build.make nav_test/CMakeFiles/gps_test_node.dir/build
+.PHONY : gps_test_node/fast
+
+#=============================================================================
 # Target rules for targets named odom_test_node
 
 # Build rule for target.
@@ -4289,6 +4302,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... my_roscpp_library"
+	@echo "... gps_test_node"
 	@echo "... odom_test_node"
 	@echo "... async_web_server_cpp"
 	@echo "... test_web_server"

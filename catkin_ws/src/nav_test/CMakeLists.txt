@@ -132,7 +132,6 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(odom_test_node src/odom_test.cpp)
-
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -143,11 +142,13 @@ add_executable(odom_test_node src/odom_test.cpp)
 ## same as for the library above
 add_dependencies(odom_test_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_executable(gps_test_node src/gps_fix_test.cpp)
+add_dependencies(gps_test_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 ## Specify libraries to link a library or executable target against
  target_link_libraries(odom_test_node
    ${catkin_LIBRARIES}
  )
-
+target_link_libraries(gps_test_node ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

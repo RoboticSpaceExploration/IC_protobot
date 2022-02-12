@@ -60,9 +60,9 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_eus: /home/maxwell/Desktop/I
 
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /home/maxwell/Desktop/IC_protobot/catkin_ws/src/navigation/navfn/srv/MakeNavPlan.srv
-/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/maxwell/Desktop/IC_protobot/catkin_ws/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from navfn/MakeNavPlan.srv"
