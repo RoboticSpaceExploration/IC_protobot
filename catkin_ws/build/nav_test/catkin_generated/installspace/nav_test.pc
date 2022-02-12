@@ -3,6 +3,6 @@ prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/install
 Name: nav_test
 Description: Description of nav_test
 Version: 0.0.0
-Cflags: -I${prefix}/include
+Cflags: 
 Libs: -L${prefix}/lib 
-Requires: nav_msgs roscpp
+Requires: roscpp navigation

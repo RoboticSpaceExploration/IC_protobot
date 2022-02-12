@@ -57,6 +57,7 @@ all: gtest/all
 all: navigation/navigation/all
 all: listener_package/all
 all: my_roscpp_library/all
+all: nav_test/all
 all: async_web_server_cpp/all
 all: navigation/map_server/all
 all: navigation/amcl/all
@@ -83,6 +84,7 @@ preinstall: gtest/preinstall
 preinstall: navigation/navigation/preinstall
 preinstall: listener_package/preinstall
 preinstall: my_roscpp_library/preinstall
+preinstall: nav_test/preinstall
 preinstall: async_web_server_cpp/preinstall
 preinstall: navigation/map_server/preinstall
 preinstall: navigation/amcl/preinstall
@@ -114,6 +116,7 @@ clean: gtest/clean
 clean: navigation/navigation/clean
 clean: listener_package/clean
 clean: my_roscpp_library/clean
+clean: nav_test/clean
 clean: async_web_server_cpp/clean
 clean: navigation/map_server/clean
 clean: navigation/amcl/clean
@@ -287,6 +290,24 @@ my_roscpp_library/preinstall:
 my_roscpp_library/clean: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/clean
 
 .PHONY : my_roscpp_library/clean
+
+#=============================================================================
+# Directory level rules for directory nav_test
+
+# Recursive "all" directory target.
+nav_test/all: nav_test/CMakeFiles/odom_test_node.dir/all
+
+.PHONY : nav_test/all
+
+# Recursive "preinstall" directory target.
+nav_test/preinstall:
+
+.PHONY : nav_test/preinstall
+
+# Recursive "clean" directory target.
+nav_test/clean: nav_test/CMakeFiles/odom_test_node.dir/clean
+
+.PHONY : nav_test/clean
 
 #=============================================================================
 # Directory level rules for directory navigation/amcl
@@ -1104,12 +1125,12 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=57 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -1131,7 +1152,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=57 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=56 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1671,12 +1692,12 @@ listener_package/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/all:
 	$(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/depend
 	$(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=72 "Built target my_roscpp_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target my_roscpp_library"
 .PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/all
 
 # Build rule for subdir invocation for target.
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/rule
@@ -1692,18 +1713,59 @@ my_roscpp_library/CMakeFiles/my_roscpp_library.dir/clean:
 .PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/clean
 
 #=============================================================================
+# Target rules for target nav_test/CMakeFiles/odom_test_node.dir
+
+# All Build rule for target.
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/std_msgs_generate_messages_py.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/roscpp_generate_messages_eus.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/roscpp_generate_messages_py.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+nav_test/CMakeFiles/odom_test_node.dir/all: listener_package/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f nav_test/CMakeFiles/odom_test_node.dir/build.make nav_test/CMakeFiles/odom_test_node.dir/depend
+	$(MAKE) -f nav_test/CMakeFiles/odom_test_node.dir/build.make nav_test/CMakeFiles/odom_test_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=81 "Built target odom_test_node"
+.PHONY : nav_test/CMakeFiles/odom_test_node.dir/all
+
+# Build rule for subdir invocation for target.
+nav_test/CMakeFiles/odom_test_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 nav_test/CMakeFiles/odom_test_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+.PHONY : nav_test/CMakeFiles/odom_test_node.dir/rule
+
+# Convenience name for target.
+odom_test_node: nav_test/CMakeFiles/odom_test_node.dir/rule
+
+.PHONY : odom_test_node
+
+# clean rule for target.
+nav_test/CMakeFiles/odom_test_node.dir/clean:
+	$(MAKE) -f nav_test/CMakeFiles/odom_test_node.dir/build.make nav_test/CMakeFiles/odom_test_node.dir/clean
+.PHONY : nav_test/CMakeFiles/odom_test_node.dir/clean
+
+#=============================================================================
 # Target rules for target async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir
 
 # All Build rule for target.
 async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/all:
 	$(MAKE) -f async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/build.make async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/depend
 	$(MAKE) -f async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/build.make async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=11,12,13,14 "Built target async_web_server_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=10,11,12,13,14 "Built target async_web_server_cpp"
 .PHONY : async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/rule
@@ -1730,7 +1792,7 @@ async_web_server_cpp/test/CMakeFiles/test_web_server.dir/all: async_web_server_c
 
 # Build rule for subdir invocation for target.
 async_web_server_cpp/test/CMakeFiles/test_web_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 async_web_server_cpp/test/CMakeFiles/test_web_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : async_web_server_cpp/test/CMakeFiles/test_web_server.dir/rule
@@ -2413,7 +2475,7 @@ navigation/map_server/CMakeFiles/map_server_utest.dir/all: gtest/googletest/CMak
 navigation/map_server/CMakeFiles/map_server_utest.dir/all: navigation/map_server/CMakeFiles/map_server_image_loader.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_utest.dir/build.make navigation/map_server/CMakeFiles/map_server_utest.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_utest.dir/build.make navigation/map_server/CMakeFiles/map_server_utest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=68 "Built target map_server_utest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=67 "Built target map_server_utest"
 .PHONY : navigation/map_server/CMakeFiles/map_server_utest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2692,7 +2754,7 @@ navigation/map_server/CMakeFiles/map_server_image_loader.dir/all: navigation/map
 navigation/map_server/CMakeFiles/map_server_image_loader.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_image_loader.dir/build.make navigation/map_server/CMakeFiles/map_server_image_loader.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_image_loader.dir/build.make navigation/map_server/CMakeFiles/map_server_image_loader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=67 "Built target map_server_image_loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=66 "Built target map_server_image_loader"
 .PHONY : navigation/map_server/CMakeFiles/map_server_image_loader.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2835,7 +2897,7 @@ navigation/map_server/CMakeFiles/map_server.dir/all: navigation/map_server/CMake
 navigation/map_server/CMakeFiles/map_server.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server.dir/build.make navigation/map_server/CMakeFiles/map_server.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server.dir/build.make navigation/map_server/CMakeFiles/map_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=65 "Built target map_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=64 "Built target map_server"
 .PHONY : navigation/map_server/CMakeFiles/map_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2977,7 +3039,7 @@ navigation/map_server/CMakeFiles/map_server-map_saver.dir/all: navigation/map_se
 navigation/map_server/CMakeFiles/map_server-map_saver.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server-map_saver.dir/build.make navigation/map_server/CMakeFiles/map_server-map_saver.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server-map_saver.dir/build.make navigation/map_server/CMakeFiles/map_server-map_saver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=66 "Built target map_server-map_saver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=65 "Built target map_server-map_saver"
 .PHONY : navigation/map_server/CMakeFiles/map_server-map_saver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5028,7 +5090,7 @@ navigation/fake_localization/CMakeFiles/fake_localization.dir/all: navigation/am
 navigation/fake_localization/CMakeFiles/fake_localization.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
 	$(MAKE) -f navigation/fake_localization/CMakeFiles/fake_localization.dir/build.make navigation/fake_localization/CMakeFiles/fake_localization.dir/depend
 	$(MAKE) -f navigation/fake_localization/CMakeFiles/fake_localization.dir/build.make navigation/fake_localization/CMakeFiles/fake_localization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=51 "Built target fake_localization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=50 "Built target fake_localization"
 .PHONY : navigation/fake_localization/CMakeFiles/fake_localization.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5779,12 +5841,12 @@ navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: gtest/googletest/CMak
 navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
 	$(MAKE) -f navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/depend
 	$(MAKE) -f navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target voxel_grid_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=95 "Built target voxel_grid_tests"
 .PHONY : navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule
@@ -5811,7 +5873,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all: navigation/voxel_
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule
@@ -5838,7 +5900,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all: navigation/
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule
@@ -5892,7 +5954,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
@@ -6028,7 +6090,7 @@ navigation/costmap_2d/CMakeFiles/coordinates_test.dir/all: navigation/voxel_grid
 navigation/costmap_2d/CMakeFiles/coordinates_test.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build.make navigation/costmap_2d/CMakeFiles/coordinates_test.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build.make navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=34 "Built target coordinates_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target coordinates_test"
 .PHONY : navigation/costmap_2d/CMakeFiles/coordinates_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6127,12 +6189,12 @@ navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all: navigation/costmap_2d/CMake
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all: navigation/costmap_2d/CMakeFiles/tf_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=35,36,37,38,39 "Built target costmap_2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=34,35,36,37,38 "Built target costmap_2d"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
@@ -6187,7 +6249,7 @@ navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/all: navigation/costma
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/rule
@@ -6214,7 +6276,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/all: navigation/costmap_
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/rule
@@ -6266,12 +6328,12 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all: na
 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=44 "Built target costmap_2d_generate_messages_nodejs"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
@@ -6478,12 +6540,12 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/all: navigation/costmap_2d
 navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/all: navigation/costmap_2d/CMakeFiles/tf_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=40 "Built target costmap_2d_cloud"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=39 "Built target costmap_2d_cloud"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule
@@ -6605,7 +6667,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/all: navigation/costmap_2d/CMakeFile
 navigation/costmap_2d/CMakeFiles/layers.dir/all: navigation/costmap_2d/CMakeFiles/tf_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/layers.dir/build.make navigation/costmap_2d/CMakeFiles/layers.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/layers.dir/build.make navigation/costmap_2d/CMakeFiles/layers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=61,62,63 "Built target layers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=61,62 "Built target layers"
 .PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6779,7 +6841,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/all: navigation/costma
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
@@ -7056,7 +7118,7 @@ navigation/costmap_2d/CMakeFiles/costmap_tester.dir/all: navigation/voxel_grid/C
 navigation/costmap_2d/CMakeFiles/costmap_tester.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_tester.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=48 "Built target costmap_tester"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target costmap_tester"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_tester.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7083,12 +7145,12 @@ navigation/costmap_2d/CMakeFiles/costmap_tester.dir/clean:
 navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all:
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=41,42 "Built target costmap_2d_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=40,41,42 "Built target costmap_2d_gencfg"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
@@ -7269,7 +7331,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all: navigation/costmap_
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
@@ -7320,12 +7382,12 @@ navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all: navigation/voxel_grid/
 navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/footprint_tests.dir/build.make navigation/costmap_2d/CMakeFiles/footprint_tests.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/footprint_tests.dir/build.make navigation/costmap_2d/CMakeFiles/footprint_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=52 "Built target footprint_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=51 "Built target footprint_tests"
 .PHONY : navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/footprint_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/footprint_tests.dir/rule
@@ -7350,7 +7412,7 @@ navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all: navigation/costmap_2d/C
 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all: navigation/costmap_2d/CMakeFiles/layers.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build.make navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build.make navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=81 "Built target obstacle_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=80 "Built target obstacle_tests"
 .PHONY : navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7549,12 +7611,12 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all: navi
 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=44 "Built target costmap_2d_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_lisp"
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
@@ -7848,7 +7910,7 @@ navigation/costmap_2d/CMakeFiles/costmap_2d_node.dir/all: navigation/costmap_2d/
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
@@ -7956,7 +8018,7 @@ navigation/costmap_2d/CMakeFiles/array_parser_test.dir/all: navigation/voxel_gri
 navigation/costmap_2d/CMakeFiles/array_parser_test.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/array_parser_test.dir/build.make navigation/costmap_2d/CMakeFiles/array_parser_test.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/array_parser_test.dir/build.make navigation/costmap_2d/CMakeFiles/array_parser_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=10 "Built target array_parser_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target array_parser_test"
 .PHONY : navigation/costmap_2d/CMakeFiles/array_parser_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -8016,7 +8078,7 @@ navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/all: navigation/
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/rule
@@ -8175,12 +8237,12 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_lin
 navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all:
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=24 "Built target base_local_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target base_local_planner_gencfg"
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/rule
@@ -8262,7 +8324,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/all: navi
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/rule
@@ -8313,12 +8375,12 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_no
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all: navigation/base_local_planner/CMakeFiles/_base_local_planner_generate_messages_check_deps_Position2DInt.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target base_local_planner_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=26 "Built target base_local_planner_generate_messages_nodejs"
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
@@ -8341,12 +8403,12 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_li
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all: navigation/base_local_planner/CMakeFiles/_base_local_planner_generate_messages_check_deps_Position2DInt.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=26 "Built target base_local_planner_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target base_local_planner_generate_messages_lisp"
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
@@ -8373,7 +8435,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_genlisp.dir/all: nav
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_genlisp.dir/rule
@@ -8459,7 +8521,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages.di
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/rule
@@ -8518,7 +8580,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_gennodejs.dir/all: n
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_gennodejs.dir/rule
@@ -8614,7 +8676,6 @@ navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigat
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/amcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -8646,6 +8707,7 @@ navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigat
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/build.make navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/build.make navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/build
@@ -8723,7 +8785,6 @@ navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMa
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -8755,6 +8816,7 @@ navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_loc
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/point_grid.dir/build.make navigation/base_local_planner/CMakeFiles/point_grid.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/point_grid.dir/build.make navigation/base_local_planner/CMakeFiles/point_grid.dir/build
@@ -8812,10 +8874,10 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_bas
 
 # All Build rule for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
-navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/costmap_2d/CMakeFiles/layers.dir/all
+navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/build
@@ -8928,7 +8990,7 @@ navigation/base_local_planner/CMakeFiles/clean_test_results_base_local_planner.d
 navigation/base_local_planner/CMakeFiles/line_iterator.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=64 "Built target line_iterator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=63 "Built target line_iterator"
 .PHONY : navigation/base_local_planner/CMakeFiles/line_iterator.dir/all
 
 # Build rule for subdir invocation for target.
@@ -8956,12 +9018,12 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cp
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all: navigation/base_local_planner/CMakeFiles/_base_local_planner_generate_messages_check_deps_Position2DInt.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build.make navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target base_local_planner_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=24 "Built target base_local_planner_generate_messages_cpp"
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/rule
@@ -9057,7 +9119,6 @@ navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMa
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -9089,6 +9150,7 @@ navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_loc
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/carrot_planner/CMakeFiles/carrot_planner.dir/build.make navigation/carrot_planner/CMakeFiles/carrot_planner.dir/depend
@@ -9491,7 +9553,6 @@ navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/am
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/amcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -9523,12 +9584,13 @@ navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/ba
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all: navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all
 	$(MAKE) -f navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/build.make navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/depend
 	$(MAKE) -f navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/build.make navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=49 "Built target dwa_local_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=48,49 "Built target dwa_local_planner"
 .PHONY : navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all
 
 # Build rule for subdir invocation for target.
@@ -9555,12 +9617,12 @@ navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/clean:
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all:
 	$(MAKE) -f navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build.make navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/depend
 	$(MAKE) -f navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build.make navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=50 "Built target dwa_local_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target dwa_local_planner_gencfg"
 .PHONY : navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/rule
@@ -9687,12 +9749,12 @@ navigation/navfn/CMakeFiles/navfn_node.dir/all: navigation/costmap_2d/CMakeFiles
 navigation/navfn/CMakeFiles/navfn_node.dir/all: navigation/navfn/CMakeFiles/navfn.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_node.dir/build.make navigation/navfn/CMakeFiles/navfn_node.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_node.dir/build.make navigation/navfn/CMakeFiles/navfn_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=80 "Built target navfn_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=79 "Built target navfn_node"
 .PHONY : navigation/navfn/CMakeFiles/navfn_node.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_node.dir/rule
@@ -9723,7 +9785,7 @@ navigation/navfn/CMakeFiles/navfn_generate_messages.dir/all: navigation/navfn/CM
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages.dir/rule
@@ -9801,12 +9863,12 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all: navigation/navf
 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=75,76 "Built target navfn_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=75 "Built target navfn_generate_messages_eus"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/rule
@@ -9830,7 +9892,7 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all: navigation/n
 navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=78 "Built target navfn_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=77 "Built target navfn_generate_messages_nodejs"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -9889,7 +9951,7 @@ navigation/navfn/CMakeFiles/navfn_geneus.dir/all: navigation/navfn/CMakeFiles/na
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_geneus.dir/rule
@@ -9940,7 +10002,7 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all: navigation/nav
 navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=77 "Built target navfn_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=76 "Built target navfn_generate_messages_lisp"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -10043,12 +10105,12 @@ navigation/navfn/CMakeFiles/navfn.dir/all: navigation/costmap_2d/CMakeFiles/tf_g
 navigation/navfn/CMakeFiles/navfn.dir/all: navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn.dir/build.make navigation/navfn/CMakeFiles/navfn.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn.dir/build.make navigation/navfn/CMakeFiles/navfn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=73 "Built target navfn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=72,73 "Built target navfn"
 .PHONY : navigation/navfn/CMakeFiles/navfn.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn.dir/rule
@@ -10101,7 +10163,7 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/all: navigation/navfn
 navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=79 "Built target navfn_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=78 "Built target navfn_generate_messages_py"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -10191,7 +10253,7 @@ navigation/navfn/test/CMakeFiles/path_calc_test.dir/all: navigation/navfn/CMakeF
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule
@@ -10218,7 +10280,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all: navigation/navfn/test/
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule
@@ -10272,7 +10334,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all: navigation/navfn
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule
@@ -10326,7 +10388,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all: n
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule
@@ -10596,7 +10658,7 @@ navigation/global_planner/CMakeFiles/global_planner.dir/all: navigation/navfn/CM
 navigation/global_planner/CMakeFiles/global_planner.dir/all: navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(MAKE) -f navigation/global_planner/CMakeFiles/global_planner.dir/build.make navigation/global_planner/CMakeFiles/global_planner.dir/depend
 	$(MAKE) -f navigation/global_planner/CMakeFiles/global_planner.dir/build.make navigation/global_planner/CMakeFiles/global_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=53,54,55 "Built target global_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=52,53,54,55 "Built target global_planner"
 .PHONY : navigation/global_planner/CMakeFiles/global_planner.dir/all
 
 # Build rule for subdir invocation for target.
@@ -10623,12 +10685,12 @@ navigation/global_planner/CMakeFiles/global_planner.dir/clean:
 navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/all:
 	$(MAKE) -f navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/depend
 	$(MAKE) -f navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=56 "Built target global_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target global_planner_gencfg"
 .PHONY : navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
@@ -10697,7 +10759,6 @@ navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/C
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -10729,6 +10790,7 @@ navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_l
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/build.make navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/depend
@@ -10893,7 +10955,6 @@ navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFil
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -10925,6 +10986,7 @@ navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_pl
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/all
@@ -10949,7 +11011,7 @@ navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/move_base/CMa
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base_node.dir/rule
@@ -10998,12 +11060,12 @@ navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/clean:
 navigation/move_base/CMakeFiles/move_base_gencfg.dir/all:
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_gencfg.dir/build.make navigation/move_base/CMakeFiles/move_base_gencfg.dir/depend
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_gencfg.dir/build.make navigation/move_base/CMakeFiles/move_base_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num= "Built target move_base_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=69 "Built target move_base_gencfg"
 .PHONY : navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule
@@ -11077,7 +11139,6 @@ navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/se
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
-navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/amcl/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
@@ -11109,6 +11170,7 @@ navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_py.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/all
+navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/all
@@ -11127,12 +11189,12 @@ navigation/move_base/CMakeFiles/move_base.dir/all: navigation/move_base/CMakeFil
 navigation/move_base/CMakeFiles/move_base.dir/all: navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base.dir/build.make navigation/move_base/CMakeFiles/move_base.dir/depend
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base.dir/build.make navigation/move_base/CMakeFiles/move_base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=69 "Built target move_base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=68 "Built target move_base"
 .PHONY : navigation/move_base/CMakeFiles/move_base.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base.dir/rule
@@ -11181,7 +11243,7 @@ navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/clean:
 web_video_server/CMakeFiles/web_video_server.dir/all: async_web_server_cpp/CMakeFiles/async_web_server_cpp.dir/all
 	$(MAKE) -f web_video_server/CMakeFiles/web_video_server.dir/build.make web_video_server/CMakeFiles/web_video_server.dir/depend
 	$(MAKE) -f web_video_server/CMakeFiles/web_video_server.dir/build.make web_video_server/CMakeFiles/web_video_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=95,96,97,98,99,100 "Built target web_video_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles --progress-num=96,97,98,99,100 "Built target web_video_server"
 .PHONY : web_video_server/CMakeFiles/web_video_server.dir/all
 
 # Build rule for subdir invocation for target.

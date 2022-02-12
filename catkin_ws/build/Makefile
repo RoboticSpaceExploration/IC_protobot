@@ -519,6 +519,19 @@ my_roscpp_library/fast:
 .PHONY : my_roscpp_library/fast
 
 #=============================================================================
+# Target rules for targets named odom_test_node
+
+# Build rule for target.
+odom_test_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odom_test_node
+.PHONY : odom_test_node
+
+# fast build rule for target.
+odom_test_node/fast:
+	$(MAKE) -f nav_test/CMakeFiles/odom_test_node.dir/build.make nav_test/CMakeFiles/odom_test_node.dir/build
+.PHONY : odom_test_node/fast
+
+#=============================================================================
 # Target rules for targets named async_web_server_cpp
 
 # Build rule for target.
@@ -4276,6 +4289,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... my_roscpp_library"
+	@echo "... odom_test_node"
 	@echo "... async_web_server_cpp"
 	@echo "... test_web_server"
 	@echo "... run_tests_async_web_server_cpp"
