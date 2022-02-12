@@ -7,6 +7,7 @@ const ROSLIB = require("roslib")
 //server config
 app.use(express.json())
 app.use(express.urlencoded())
+app.use(express.static("public"))
 
 // roslib
 var ros = new ROSLIB.Ros({
@@ -38,4 +39,6 @@ app.post('/', (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"))
 })
 
-app.listen(8000, ()=> {console.log('now listening on port 8000')})
+
+
+app.listen(3000, ()=> {console.log('now listening on port 3000')})
