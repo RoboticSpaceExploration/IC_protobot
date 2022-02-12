@@ -56,3 +56,22 @@ make: *** [Makefile:121: cmTC_50406/fast] Error 2
 
 
 
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a1223/fast && make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a1223.dir/build.make CMakeFiles/cmTC_a1223.dir/build
+make[2]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: pgm.h: No such file or directory
+    1 | #include <pgm.h>
+      |          ^~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/cmTC_a1223.dir/build.make:66: CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o] Error 1
+make[2]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_a1223/fast] Error 2
+make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+

@@ -489,3 +489,74 @@ make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CM
 
 
 
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fc176/fast && /usr/bin/make -f CMakeFiles/cmTC_fc176.dir/build.make CMakeFiles/cmTC_fc176.dir/build
+make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc176.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fc176.dir/CheckIncludeFile.c.o   -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fc176
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc176.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fc176.dir/CheckIncludeFile.c.o  -o cmTC_fc176 
+make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the drand48 exist passed with the following output:
+Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_94dca/fast && /usr/bin/make -f CMakeFiles/cmTC_94dca.dir/build.make CMakeFiles/cmTC_94dca.dir/build
+make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94dca.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_94dca.dir/CheckSymbolExists.c.o   -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_94dca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94dca.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_94dca.dir/CheckSymbolExists.c.o  -o cmTC_94dca 
+make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+File /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef drand48
+  return ((int*)(&drand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_98a19/fast && /usr/bin/make -f CMakeFiles/cmTC_98a19.dir/build.make CMakeFiles/cmTC_98a19.dir/build
+make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98a19.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_98a19.dir/CheckIncludeFile.c.o   -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_98a19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98a19.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_98a19.dir/CheckIncludeFile.c.o  -o cmTC_98a19 
+make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file FL/Fl.H exists passed with the following output:
+Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1f417/fast && make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_1f417.dir/build.make CMakeFiles/cmTC_1f417.dir/build
+make[2]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1f417.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_1f417.dir/CheckIncludeFile.cxx.o -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_1f417
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f417.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_1f417.dir/CheckIncludeFile.cxx.o  -o cmTC_1f417 
+make[2]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
